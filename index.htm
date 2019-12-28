@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ProgressBar</title>
+    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="src/js/jQuery.mprogressbar.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300, 400, 600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/jQuery.mprogressbar.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            color: #3c4769;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 1200px;
+            margin: auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        header h1 {
+            margin-top: 0;
+        }
+
+        .demo-title {
+            margin-top: 40px;
+        }
+
+        h3 {
+            font-weight: 600;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .col {
+            width: 48%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>mProgressbar</h1>
+            <p>Easy to use jquery Progressbar by <a href="https://mysticalthemes.com">Mystical Themes</a></p>
+        </div>
+    </header>
+    
+    <div class="demos">
+        <div class="container row">
+            <div class="col">
+                <h3 class="demo-title">Simple Progress</h3>
+                <div class="simple"
+                    data-title="HTML"
+                    data-pgress_color="#2f3542"
+                    data-counter_color="#2f3542"
+                    data-pgress_width="80"
+                ></div>
+                <div class="simple"
+                    data-title="JavaScript"
+                    data-pgress_color="#6ab04c"
+                    data-counter_color="#6ab04c"
+                    data-pgress_width="90"
+                ></div>
+                <div class="simple"
+                    data-title="Photoshop"
+                    data-pgress_color="#eb4d4b"
+                    data-counter_color="#eb4d4b"
+                    data-pgress_width="50"
+                ></div>
+                <div class="simple"
+                    data-title="Illustrator"
+                    data-pgress_color="#22a6b3"
+                    data-counter_color="#22a6b3"
+                    data-pgress_width="65"
+                ></div>
+            </div>
+            <div class="col">
+                <h3 class="demo-title">Rounded Progress</h3>
+                <div class="rounded"
+                    data-title="HTML"
+                    data-pgress_color="#2f3542"
+                    data-counter_color="#2f3542"
+                    data-pgress_width="80"
+                ></div>
+                <div class="rounded"
+                    data-title="JavaScript"
+                    data-pgress_color="#6ab04c"
+                    data-counter_color="#6ab04c"
+                    data-pgress_width="90"
+                ></div>
+                <div class="rounded"
+                    data-title="Photoshop"
+                    data-pgress_color="#eb4d4b"
+                    data-counter_color="#eb4d4b"
+                    data-pgress_width="50"
+                ></div>
+                <div class="rounded"
+                    data-title="Illustrator"
+                    data-pgress_color="#22a6b3"
+                    data-counter_color="#22a6b3"
+                    data-pgress_width="65"
+                ></div>
+            </div>
+            <div class="col">
+                <h3 class="demo-title">Thin Progress</h3>
+                <div class="thin"
+                    data-title="HTML"
+                    data-pgress_color="#2f3542"
+                    data-counter_bgcolor="#2f3542"
+                    data-title_color="#2f3542"
+                    data-pgress_width="80"
+                ></div>
+                <div class="thin"
+                    data-title="JavaScript"
+                    data-pgress_color="#6ab04c"
+                    data-counter_bgcolor="#6ab04c"
+                    data-title_color="#2f3542"
+                    data-pgress_width="90"
+                ></div>
+                <div class="thin"
+                    data-title="Photoshop"
+                    data-pgress_color="#eb4d4b"
+                    data-counter_bgcolor="#eb4d4b"
+                    data-title_color="#2f3542"
+                    data-pgress_width="50"
+                ></div>
+                <div class="thin"
+                    data-title="Illustrator"
+                    data-pgress_color="#22a6b3"
+                    data-counter_bgcolor="#22a6b3"
+                    data-title_color="#2f3542"
+                    data-pgress_width="65"
+                ></div>
+            </div>
+            <div class="col">
+                <h3 class="demo-title">Thin Rounded Progress</h3>
+                <div class="thin-rounded"
+                    data-title="HTML"
+                    data-pgress_color="#2f3542"
+                    data-counter_bgcolor="#2f3542"
+                    data-title_color="#2f3542"
+                    data-pgress_width="80"
+                ></div>
+                <div class="thin-rounded"
+                    data-title="JavaScript"
+                    data-pgress_color="#6ab04c"
+                    data-counter_bgcolor="#6ab04c"
+                    data-title_color="#2f3542"
+                    data-pgress_width="90"
+                ></div>
+                <div class="thin-rounded"
+                    data-title="Photoshop"
+                    data-pgress_color="#eb4d4b"
+                    data-counter_bgcolor="#eb4d4b"
+                    data-title_color="#2f3542"
+                    data-pgress_width="50"
+                ></div>
+                <div class="thin-rounded"
+                    data-title="Illustrator"
+                    data-pgress_color="#22a6b3"
+                    data-counter_bgcolor="#22a6b3"
+                    data-title_color="#2f3542"
+                    data-pgress_width="65"
+                ></div>
+            </div>
+        </div>
+    </div>
+</body>
+    <script>
+        /** Simple Progress **/
+        $('.simple').mprogressbar();
+
+        /** Rounded Progress **/
+        $('.rounded').mprogressbar({
+            pbar_border_radius: 20,
+            pgress_border_radius: 20
+        });
+
+        /** Thin Progress **/
+        $('.thin').mprogressbar({
+            pbar_height: 8,
+            pgress_height: 8,
+            title_display: 'outside',
+            counter_display: 'intact',
+            counter_color: '#ffffff',
+            counter_padding: 6,
+            pbar_margin: 70,
+        });
+
+        /** Thin Rounded Progress **/
+        $('.thin-rounded').mprogressbar({
+            pbar_height: 8,
+            pgress_height: 8,
+            title_display: 'outside',
+            counter_display: 'intact',
+            counter_color: '#ffffff',
+            counter_padding: 6,
+            pbar_border_radius: 8,
+            pgress_border_radius: 8,
+            counter_border_radius: 4,
+            pbar_margin: 70,
+        });
+    </script>
+</html>
