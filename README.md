@@ -66,7 +66,7 @@ This plugin provides a simple jquery progressbar functionality
 ```
 
 ## Demo
-[Demo Page](https://mysticalthemes.com/jquery-plugins/mprogressbar)
+[Demo Page](https://jquery-plugins.mysticalthemes.com/mprogressbar/)
 
 ## License
 
